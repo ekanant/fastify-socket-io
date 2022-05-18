@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Look at the server log to see if the connection happened</h1>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.min.js" integrity="sha512-mHO4BJ0ELk7Pb1AzhTi3zvUeRgq3RXVOu9tTRfnA6qOxGK4pG2u57DJYolI4KrEnnLTcH9/J5wNOozRTDaybXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    var socket = io();
+
+    //Send data to socket
+    socket.emit("message", {
+        message: "12345"
+    });
+
+    socket.on("gotMessage", (args) => {
+        console.log("message from socket", args);
+    });
+  </script>
+</html>
