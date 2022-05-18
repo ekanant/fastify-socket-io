@@ -6,7 +6,9 @@
   "author": "Ekanant Phanuwatyingyong <ekanant2535@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "fastify": "^3.29.0"
+    "fastify": "^3.29.0",
+    "fastify-socket.io": "^3.0.0",
+    "socket.io": "^4.5.1"
   },
   "scripts": {
     "start": "node src/server.js"
