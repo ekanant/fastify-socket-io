@@ -1,0 +1,14 @@
+{
+  "name": "fastify-socket-io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ekanant/fastify-socket-io.git",
+  "author": "Ekanant Phanuwatyingyong <ekanant2535@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.29.0"
+  },
+  "scripts": {
+    "start": "node src/server.js"
+  }
+}
